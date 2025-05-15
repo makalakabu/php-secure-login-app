@@ -32,12 +32,12 @@ function sendEmail($email, $pin){
         $mail->isSMTP();
         $mail->Host = 'smtp.mail.yahoo.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'sihombing_marcell@yahoo.com';
-        $mail->Password = 'jzyuivxboiqkjpap';
+        $mail->Username = 'Put Your Email Here!';
+        $mail->Password = 'Put Your Password Here!';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('sihombing_marcell@yahoo.com', 'Email Authentication');
+        $mail->setFrom('Put Your Email Here!', 'Email Authentication');
         $mail->addAddress($email);
         $mail->Subject = 'Your Authentication PIN';
         $mail->Body = "Your PIN is $pin. It expires in 60 sec.";
